@@ -53,7 +53,9 @@ namespace AirplaneParkingAssistant.API.Domain
             if (string.IsNullOrWhiteSpace(modelId))
                 return Result.Failure<Airplane>("Airplane model Id must be provided");
 
-            var airplane = All.SingleOrDefault(a => a.ModelId == modelId);
+            var trimmedModelId = modelId.Trim().ToUpper();
+
+            var airplane = All.SingleOrDefault(a => a.ModelId == trimmedModelId);
             if (airplane == null)
                 return Result.Failure<Airplane>("Airplane model not found");
 

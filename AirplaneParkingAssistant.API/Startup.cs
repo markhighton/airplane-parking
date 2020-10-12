@@ -46,7 +46,7 @@ namespace AirplaneParkingAssistant.API
 
             app.UseSwaggerUI(c =>
             {
-                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Home Owner API");
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "Parking Assistant API");
 
             });
 
