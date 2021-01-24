@@ -15,6 +15,7 @@ namespace AirplaneParkingAssistant.API.Domain
         public static Airplane A330 = new Airplane(nameof(A330), ModelType.Jet, Area.Medium);
         public static Airplane B777 = new Airplane(nameof(B777), ModelType.Jet, Area.Medium);
         public static Airplane E195 = new Airplane(nameof(E195), ModelType.Props, Area.Small);
+        public static Airplane AC130 = new Airplane(nameof(E195), ModelType.Props, Area.Medium);
 
         // Consideration - Could leverage reflection here to get the instances via the assembly in case we needed to add more models but forget to include them
         private static readonly List<Airplane> All = new List<Airplane>
