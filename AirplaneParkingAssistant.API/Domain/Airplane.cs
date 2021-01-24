@@ -21,7 +21,7 @@ namespace AirplaneParkingAssistant.API.Domain
         private static readonly List<Airplane> All = new List<Airplane>
         {
             A330, A380, B747,
-            B777, E195
+            B777, E195, AC130
         };
 
         public enum ModelType
